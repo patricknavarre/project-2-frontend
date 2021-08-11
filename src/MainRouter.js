@@ -1,8 +1,8 @@
 import React from 'react'
-import { Router as Router, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import Header from './components/Header'
 import HomePage from './components/HomePage'
-import Application from './components/Application'
+import Apply from './components/Apply'
 
 
 
@@ -13,7 +13,7 @@ export default function MainRouter() {
                 <Header />
                 <Switch>
                     <Route exact path="/" component={HomePage} />
-                    <Route exact path="/application" component={Application} />
+                    <Route exact path="/apply" component={Apply} />
                 </Switch>
             </Router>
         </div>

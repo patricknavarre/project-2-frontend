@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Application() {
+export default function Apply() {
   const classes = useStyles();
 
   return (

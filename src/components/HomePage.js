@@ -30,11 +30,10 @@ export default function HomePage() {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Lizard
+            Two Dudes Trucking Co. 
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
+            If you'd like to join the best trucking company in the USA then you've come to the right place.  Apply now to join our team!
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -43,7 +42,7 @@ export default function HomePage() {
           Share
         </Button>
         <Button size="small" color="primary">
-          Learn More
+          Apply Now
         </Button>
       </CardActions>
     </Card>
