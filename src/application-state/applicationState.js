@@ -1,10 +1,12 @@
+import axios from 'axios';
+
 // Actions
 
 export const ADD_NEW_APPLICANT_ACTION = 'codeImmersives/addNewApplicant'
 
 // Action Creator
 
-export const addNewApplicantCreator = (applicant) => (dispatch, getState) => {
+export const addNewApplicantCreator = () => (dispatch, getState) => {
 	dispatch({
 		type: ADD_NEW_APPLICANT_ACTION,
 		payload: {

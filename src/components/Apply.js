@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
 import Input from '@material-ui/core/Input'
@@ -11,6 +11,9 @@ import {
     Snackbar,
     Grid,
   } from "@material-ui/core";
+  import { NavLink, Link } from 'react-router-dom';
+
+  import { addNewApplicantCreator } from '../application-state/applicationState';
   
 
 const useStyles = makeStyles((theme) => ({
