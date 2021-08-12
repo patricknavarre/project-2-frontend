@@ -20,7 +20,9 @@ export const addNewApplicantCreator = () => (dispatch, getState) => {
 	})
 }
 
-export const initialState = null;
+export const initialState = {
+	applications: [],
+};
 
 // Reducer
 
