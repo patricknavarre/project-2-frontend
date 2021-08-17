@@ -28,6 +28,13 @@ const useStyles = makeStyles((theme) => ({
 export default function Apply() {
   const classes = useStyles();
 
+  const [firstName, setFirstName] = useState();
+  const [lastName, setLastName] = useState();
+  const [dateOfBirth, setDateOfBirth] = useState();
+  const [city, setCity] = useState();
+  const [email, setEmail] = useState();
+  const [phoneNumber, setPhoneNumber] = useState();
+
   return (
     <Grid
       container
@@ -48,16 +55,19 @@ export default function Apply() {
             <Input
               id="component-firstName"
               name="First Name"
+              onChange={(e) => setFirstName(e.target.value)}
             />
             <InputLabel htmlFor="component-lastName">Last Name</InputLabel>
             <Input
               id="component-lastName"
               name="Last Name"
+              onChange={(e) => setLastName(e.target.value)}
             />
             <InputLabel htmlFor="component-date-of-birth">Date of Birth</InputLabel>
             <Input
               id="component-date-of-birth"
               name="date-of-birth"
+              onChange={(e) => setDateOfBirth(e.target.value)}
             />
 
           <br />
@@ -65,13 +75,21 @@ export default function Apply() {
             <Input
               id="component-city"
               name="city"
+              onChange={(e) => setCity(e.target.value)}
             />
              <InputLabel htmlFor="component-email">Email</InputLabel>
             <Input
               id="component-email"
               name="email"
+              onChange={(e) => setEmail(e.target.value)}
             />
-             <InputLabel htmlFor="component-city">Phone Number</InputLabel>
+             <InputLabel 
+             htmlFor="component-city">Phone Number</InputLabel>
+             <Input
+              id="component-phoneNumber"
+              name="phoneNumber"
+              onChange={(e) => setPhoneNumber(e.target.value)}>
+             </Input>
 
           <br />
           <Button variant="contained" color="primary" type="submit" >
